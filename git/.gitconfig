@@ -1,0 +1,12 @@
+[user]
+	name = xxxxxxx
+	email = xxxxxxx@xxxx.com
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	sh = stash
+	ci = commit
+	cl = clone
+	pl = pull
+	pu = push
