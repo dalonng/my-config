@@ -1,0 +1,326 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Oct 30 18:24:33 2014
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/Projects/hellos/ruby.hello/hello.rb" "~/Projects/hellos/python.hello/hello.py" "~/Projects/hellos/python.hello/" "~/Projects/hellos/haskell.hello/FixedPointFunction.hs" "~/Projects/hellos/haskell.hello/halt.hs" "~/Projects/hellos/haskell.hello/mergeSort.hs" "~/Projects/hellos/haskell.hello/quickSort.hs" "~/Projects/hellos/haskell.hello/sort.hs" "~/Projects/hellos/haskell.hello/recursive.hs" "~/Projects/hellos/haskell.hello/hello.hs" "~/Projects/hellos/haskell.hello/RecursiveFunc.hs" "~/.emacs" "~/demo.markdown" "~/demo.mk" "~/Projects/hellos/haskell.hello/SyntaxInFunctions.hs" "~/Projects/hellos/haskell.hello/type.hs" "~/Projects/hellos/haskell.hello/typeclasses.hs" "~/Projects/hellos/haskell.hello/type.hs" "~/Projects/hellos/haskell.hello/typeclasses.hs" "~/Projects/hellos/haskell.hello/baby.hs" "~/Projects/hellos/haskell.hello/decToRome.hs" "~/Projects/hellos/haskell.hello/decimalismToDecimalism.hs" "~/Projects/hellos/haskell.hello/decimalismToDecimalism" "~/Projects/hellos/haskell.hello/fibonacci.hs" "~/workspace/imagediff/imagediff.rb" "~/.emacs" "~/Projects/hellos/haskell.hello/RecursiveFunc.hs" "~/Projects/hellos/haskell.hello/hello.hs" "~/Projects/hellos/python.hello/hello.py" "~/Projects/hellos/jp.hello/hello.jp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/ruby.hello/hello.rb"
+  "hello.rb"
+  'ruby-mode
+  '(auto-complete-mode)
+  247
+  '(119 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/codelib/AFNetworking/README.md"
+  "README.md<2>"
+  'fundamental-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/codelib/facebook-ios-sdk/Bolts-IOS/Readme.md"
+  "Readme.md"
+  'fundamental-mode
+  nil
+  5908
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/python.hello/hello.py"
+  "hello.py"
+  'python-mode
+  '(auto-complete-mode)
+  162
+  '(47 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "python.hello"
+  'dired-mode
+  nil
+  257
+  '(nil nil)
+  t
+  '("/Users/st14591/Projects/hellos/python.hello/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/FixedPointFunction.hs"
+  "FixedPointFunction.hs"
+  'haskell-mode
+  '(auto-complete-mode)
+  389
+  '(389 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/halt.hs"
+  "halt.hs"
+  'haskell-mode
+  '(auto-complete-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/mergeSort.hs"
+  "mergeSort.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  318
+  '(322 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/quickSort.hs"
+  "quickSort.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  604
+  '(195 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/recursive.hs"
+  "recursive.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  537
+  '(344 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/sort.hs"
+  "sort.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  1129
+  '(857 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/hello.hs"
+  "hello.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  714
+  '(1125 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/RecursiveFunc.hs"
+  "RecursiveFunc.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  326
+  '(2 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/SyntaxInFunctions.hs"
+  "SyntaxInFunctions.hs"
+  'haskell-mode
+  '(auto-complete-mode)
+  1151
+  '(744 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(auto-complete-mode)
+  2628
+  '(2597 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/type.hs"
+  "type.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  513
+  '(527 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/typeclasses.hs"
+  "typeclasses.hs"
+  'haskell-mode
+  '(auto-complete-mode)
+  1004
+  '(1605 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/baby.hs"
+  "baby.hs"
+  'haskell-mode
+  '(auto-complete-mode)
+  304
+  '(304 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/decToRome.hs"
+  "decToRome.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  471
+  '(113 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/bash.hello/hello.sh"
+  "hello.sh"
+  'sh-mode
+  '(auto-complete-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/decimalismToDecimalism.hs"
+  "decimalismToDecimalism.hs"
+  'haskell-mode
+  '(auto-complete-mode)
+  6
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/decimalismToDecimalism"
+  "decimalismToDecimalism"
+  'fundamental-mode
+  nil
+  3
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/fibonacci.hs"
+  "fibonacci.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  694
+  '(799 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/codelib/android/README.md"
+  "README.md"
+  'fundamental-mode
+  nil
+  2139
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/jp.hello/hello.jp"
+  "hello.jp"
+  'fundamental-mode
+  nil
+  15
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/haskell.hello/interactWith.hs"
+  "interactWith.hs"
+  'haskell-mode
+  '(haskell-indent-mode auto-complete-mode)
+  400
+  '(548 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/scheme.hello/hello.scm"
+  "hello.scm"
+  'scheme-mode
+  '(auto-complete-mode)
+  10
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/st14591/Projects/hellos/scheme.hello/sqrt.scm"
+  "sqrt.scm"
+  'scheme-mode
+  '(auto-complete-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  nil)
+
