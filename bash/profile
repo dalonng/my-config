@@ -1,9 +1,10 @@
-# ENV
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export PATH="$HOME/.rvm/bin:/usr/local/sbin:$PATH" # Add RVM to PATH for scripting
-export PATH="/Library/Haskell/bin:$PATH"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*so
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export THEOS=/opt/theos
+export EDITOR=~/Applications/Emacs.app/Contents/MacOS/Emacs
+export SCALA_HOME=/usr/local/opt/scala/libexec
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 ## 增加一些保护 ##
 alias rm='rm -i'
@@ -20,9 +21,20 @@ alias wget='wget -c'
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
-alias rm='rm -I --preserve-root'
 alias ln='ln -i'
+alias gitup='git-up'
 
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+alias -s php=mate
+alias -s py=mate
+alias -s rb=mate
+alias -s html=mate
+alias gcid="git log | head -1 | awk '{print substr(\$2,1,7)}' | pbcopy"
+
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 # 彩色的grep输出
 alias grep='grep --color=auto'
 export GREP_COLOR='1;33'
@@ -54,34 +66,11 @@ _getdomainnameonly(){
 	f="${f#sftp://}"
 	# remove username and/or username:password part of hostname
 	f="${f#*:*@}"
-	f="${f#*@}"
+	f="${f#*@}"a
 	# remove all /foo/xyz.html*
 	f=${f%%/*}
 	# show domain name only
 	echo "$f"
-}
- 
-ping(){
-	local array=( $@ ) # get all args in an array
-	local len=${#array[@]} # find the length of an array
-	local host=${array[$len-1]} # get the last arg
-	local args=${array[@]:0:$len-1} # get all args before the last arg in $@ in an array
-	local _ping="/bin/ping"
-	local c=$(_getdomainnameonly "$host")
-	[ "$t" != "$c" ] && echo "Sending ICMP ECHO_REQUEST to \"$c\"..."
-	# pass args and host
-	$_ping $args $c
-}
- 
-host(){
-	local array=( $@ )
-	local len=${#array[@]}
-	local host=${array[$len-1]}
-	local args=${array[@]:0:$len-1}
-	local _host="/usr/bin/host"
-	local c=$(_getdomainnameonly "$host")
-	[ "$t" != "$c" ] && echo "Performing DNS lookups for \"$c\"..."
-	$_host $args $c
 }
 
 # 在后台任务结束时立刻通知
@@ -156,7 +145,6 @@ extract() {
 
 # Network
 alias listen="lsof -P -i -n"
-alias port='netstat -tulanp'
 getlocation() { lynx -dump http://www.ip-adress.com/ip_tracer/?QRY=$1|grep address|egrep 'city|state|country'|awk '{print $3,$4,$5,$6,$7,$8}'|sed 's\ip address flag \\'|sed 's\My\\';}
 
 # Funny
