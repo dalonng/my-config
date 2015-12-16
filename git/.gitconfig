@@ -1,6 +1,5 @@
 [user]
-	name = 姜大龙
-	email = jiangdalong@meituan.com
+	name = Jack
 [core]
 	excludesfile = /Users/dalonng/.gitignore_global
 	editor = emacs
