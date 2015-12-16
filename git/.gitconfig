@@ -1,25 +1,45 @@
 [user]
-	name = Jack
-	email = dalonng@gmail.com
+	name = 姜大龙
+	email = jiangdalong@meituan.com
 [core]
-	excludesfile = /Users/st14591/.gitignore_global
+	excludesfile = /Users/dalonng/.gitignore_global
 	editor = emacs
+	[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	[diff]
+	tool = Kaleidoscope
+	[difftool]
+	prompt = false
+
+	[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+	[mergetool]
+	prompt = false
+	[merge]
+	tool = Kaleidoscope
+[push]
+	default=current
+[color]
+	ui=auto
+[alias]
+	aa = add --all
+	co = checkout
+	st = status
+	br = branch
+	ci = commit -v
+	ca = commit --amend
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	dump = cat-file -p
+	pull = up
+	cl = clone
+	up = !git fetch origin && git rebase origin/master
+	last = log -l HEAD
+	visual = !gitk
+	l = log --oneline --graph
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[alias]
-	co = checkout
-	st = status
-	sh = stash
-	br = branch
-	up = pull
-	pl = pull
-	cl = clone
-	ci = commit -v
-	sm = submodule
-	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-	lg = !"git lg1"
