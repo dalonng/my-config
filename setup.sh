@@ -34,6 +34,7 @@ check_and_install mcfly
 check_and_install exa
 check_and_install rg ripgrep
 check_and_install tig
+check_and_install stats
 
 brew cleanup
 
