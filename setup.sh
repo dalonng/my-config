@@ -35,6 +35,7 @@ check_and_install exa
 check_and_install rg ripgrep
 check_and_install tig
 check_and_install stats
+check_and_install mate textmate
 
 brew cleanup
 
