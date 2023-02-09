@@ -1,7 +1,7 @@
 #!/usr/local/bin/bash
 
-workdir=$(cd $(dirname "$0"); pwd)
-echo "$workdir"
+workdir=$(cd $(dirname "$0"); pwd) || exit 1
+#echo "$workdir"
 
 # shellcheck source=/dev/null
 source "${workdir}/alias.sh"
