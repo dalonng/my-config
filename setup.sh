@@ -37,6 +37,7 @@ check_and_install tig
 check_and_install stats
 check_and_install mate textmate
 check_and_install zinit
+check_and_install sloth
 
 brew cleanup
 
