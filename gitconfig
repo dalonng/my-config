@@ -1,0 +1,41 @@
+[alias]
+	cl = clone
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	cob = checkout -b -t
+	last = log -1 HEAD
+	ol = log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+	aci =  commit --amend --no-edit
+	tree = log --graph --oneline --all
+	w = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --author=jiangdalong@kuaishou.com --since="4 weeks ago"
+	change = diff-tree --no-commit-id --name-only -r HEAD
+	# tree = log --graph --decorate --pretty=oneline --abbrev-commit
+[user]
+	name = dalonng
+	email = dalonng@gmail.com
+[core]
+	editor = emacs
+	ignorecase = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = auto
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+[safe]
+	directory = /Volumes/T5/develop/swift_project/swift
+[http]
+	sslVerify = false
