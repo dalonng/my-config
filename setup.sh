@@ -39,6 +39,9 @@ check_and_install mate textmate
 check_and_install zinit
 check_and_install sloth
 
+# https://www.warp.dev/
+check_and_install warp
+
 # Cutter 是由 rizin 提供支持的免费开源逆向工程平台
 brew install --cask cutter
 

@@ -20,3 +20,7 @@ fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+if [ -d "$HOME/opt/bin" ]; then
+  export PATH="$HOME/opt/bin:$PATH"
+fi
