@@ -38,6 +38,7 @@ check_and_install stats
 check_and_install mate textmate
 check_and_install zinit
 check_and_install sloth
+check_and_install cb clipboard
 
 # https://www.warp.dev/
 check_and_install warp
