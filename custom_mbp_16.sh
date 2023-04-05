@@ -4,7 +4,7 @@ function binstall {
   # Comment out the last 2 lines of this script
   tail -n 2 Gemfile | sed -i '' 's/^/#/' Gemfile
 
-  bundle exec pod install --repo-update --verbose
+  bundle install
 
   # uncomment these lines to
   tail -n 2 Gemfile | sed -i '' 's/^.//' Gemfile
