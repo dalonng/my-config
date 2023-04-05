@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 function binstall {
-  # Comment out the last 2 lines of this script
-  tail -n 2 Gemfile | sed -i '' 's/^/#/' Gemfile
+  # remove last two lines
+  sed -i '' '$d;$d' Gemfile
 
   bundle install
 
-  # uncomment these lines to
-  tail -n 2 Gemfile | sed -i '' 's/^.//' Gemfile
+  # undo file modifications
+  git checkout -- Gemfile
 }
 
 alias pinstallr="bundle exec pod install --repo-update --verbose"
