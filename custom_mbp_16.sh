@@ -5,6 +5,7 @@ function binstall {
   sed -i '' '$d;$d' Gemfile
 
   bundle install
+  bundle exec pod install --repo-update --verbose
 
   # undo file modifications
   git checkout -- Gemfile
