@@ -36,7 +36,6 @@ alias ls="exa"
 alias 10rg="rg -A 10 -B 10"
 alias rg="rg --no-ignore"
 
-
 # python tools
 alias http="python3 -m http.server 8000"
 alias prettyjson='python -m json.tool'

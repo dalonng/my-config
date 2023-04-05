@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-function check_and_install()
-{
+function check_and_install() {
   status=$(command -v "$1")
   bottle=$2
-  if [ -z "$2" ]
-  then
+  if [ -z "$2" ]; then
     bottle="$1"
   fi
 
