@@ -1,20 +1,19 @@
 #!/usr/local/bin/bash
 
 function mcd() {
-    mkdir -p "$1"
-    cd "$1" || exit
+  mkdir -p "$1"
+  cd "$1" || exit
 }
 
 function pids_by_name {
-    pids=$(ps -ef | pgrep "$1" | awk '{print $2}')
-    echo "${pids}"
+  pids=$(ps -ef | pgrep "$1" | awk '{print $2}')
+  echo "${pids}"
 }
 
 function killps {
-    for pid in $(ps -ef | pgrep "$1" | awk '{print $3}')
-    do
-    	kill -9 "$pid"
-    done
+  for pid in $(ps -ef | pgrep "$1" | awk '{print $3}'); do
+    kill -9 "$pid"
+  done
 }
 
 ########################################################################
@@ -47,10 +46,10 @@ _fzf_comprun() {
   shift
 
   case "$command" in
-    cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
-    export|unset) fzf "$@" --preview "eval 'echo \$'{}" ;;
-    ssh)          fzf "$@" --preview 'dig {}' ;;
-    *)            fzf "$@" ;;
+  cd) fzf "$@" --preview 'tree -C {} | head -200' ;;
+  export | unset) fzf "$@" --preview "eval 'echo \$'{}" ;;
+  ssh) fzf "$@" --preview 'dig {}' ;;
+  *) fzf "$@" ;;
   esac
 }
 
