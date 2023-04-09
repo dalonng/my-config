@@ -39,6 +39,7 @@ check_and_install sloth
 check_and_install hexyl
 check_and_install cb clipboard
 check_and_install cloc
+check_and_install xcodegen
 
 # https://www.warp.dev/
 check_and_install warp
