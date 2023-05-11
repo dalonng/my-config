@@ -60,3 +60,9 @@ function fcat() {
   path="$(/usr/local/bin/fd --type f "$1")"
   /usr/local/bin/bat "$path" --theme=gruvbox-dark
 }
+
+function rcat() {
+  local path
+  path="$(/usr/local/bin/fd --type f "$1")"
+  /usr/local/bin/rich "$path" --theme=gruvbox-dark
+}

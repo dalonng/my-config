@@ -41,6 +41,7 @@ check_and_install cb clipboard
 check_and_install cloc
 check_and_install xcodegen
 check_and_install bat
+check_and_install rich
 
 # https://www.warp.dev/
 check_and_install warp
