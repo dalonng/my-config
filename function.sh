@@ -54,3 +54,9 @@ _fzf_comprun() {
 }
 
 ################################################################
+
+function fcat() {
+  local path
+  path="$(/usr/local/bin/fd --type f "$1")"
+  /usr/local/bin/bat "$path" --theme=gruvbox-dark
+}
