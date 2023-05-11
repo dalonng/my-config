@@ -1,7 +1,10 @@
 #!/usr/local/bin/bash
 
-workdir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-echo "$workdir"
+workdir=$(
+  cd "$(dirname "$0")"
+  pwd
+) || exit 1
+#echo "$workdir"
 
 # shellcheck source=/dev/null
 source "${workdir}/alias.sh"
