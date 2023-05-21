@@ -34,8 +34,5 @@ required = true
 clean = git-lfs clean -- %f
 smudge = git-lfs smudge -- %f
 process = git-lfs filter-process
-[pull]
-[safe]
-directory = /Volumes/T5/develop/swift_project/swift
 [http]
 sslVerify = false
