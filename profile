@@ -25,7 +25,6 @@ if [[ "$RESOLUTION" == *"3072 x 1920"* ]]; then
     echo "custom_mbp_16.sh loaded successfully"
 fi
 
-echo "fdsfds"
-if [[ $(uname -s) == "Darwin" ]]; then
-  echo "This is Mac"
-fi
+#if [[ $(uname -s) == "Darwin" ]]; then
+#  echo "This is Mac"
+#fi
