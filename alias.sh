@@ -16,6 +16,7 @@ if test -f "/usr/local/bin/code"; then
 fi
 
 alias e="emacs --debug-init"
+alias g="git"
 alias cat="cat -n"
 
 # git
