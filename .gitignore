@@ -30,3 +30,4 @@ tramp
 
 # AUCTeX auto folder
 /auto/
+Brewfile.lock.json

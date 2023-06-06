@@ -19,7 +19,8 @@ brew update
 # 升级 formulae
 brew upgrade
 
-check_and_install emacs
+brew bundle
+
 check_and_install ncdu
 check_and_install rbenv
 # check_and_install swiftenv
