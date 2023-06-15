@@ -16,6 +16,9 @@ brew 'zsh-syntax-highlighting'
 
 brew 'emacs'
 
+# https://github.com/kraanzu/dooit
+brew 'dooit'
+
 cask 'warp'
 
 # brew bundle
