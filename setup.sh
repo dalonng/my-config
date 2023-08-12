@@ -56,3 +56,6 @@ brew cleanup
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone https://github.com/laurent22/rsync-time-backup "${HOME}/opt"
+
+# install hishtory https://github.com/ddworken/hishtory
+curl https://hishtory.dev/install.py | python3 -
