@@ -16,6 +16,8 @@ brew 'zsh-syntax-highlighting'
 
 brew 'emacs'
 
+brew 'atuin'
+
 # https://github.com/kraanzu/dooit
 brew 'dooit'
 
