@@ -43,6 +43,7 @@ check_and_install cloc
 check_and_install xcodegen
 check_and_install bat
 check_and_install rich
+check_and_install coteditor
 
 # https://www.warp.dev/
 check_and_install warp
