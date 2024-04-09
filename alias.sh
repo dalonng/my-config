@@ -33,7 +33,7 @@ alias tfile="tig --"
 alias bup="brew update --verbose && brew upgrade --verbose"
 
 # moden unix
-alias ls="exa"
+alias ls="lsd"
 alias 10rg="rg -A 10 -B 10"
 alias rg="rg --no-ignore"
 

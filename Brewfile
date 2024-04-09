@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 brew 'direnv'
-brew 'exa'
+brew 'lsd'
 brew 'fd'
 brew 'fzf'
 brew 'gh'
