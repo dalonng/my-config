@@ -41,3 +41,4 @@ alias rg="rg --no-ignore"
 alias http="python3 -m http.server 8000"
 alias prettyjson='python -m json.tool'
 alias python=python3
+alias pip=pip3
