@@ -66,3 +66,31 @@ function rcat() {
   path="$(/usr/local/bin/fd --type f "$1")"
   /usr/local/bin/rich "$path" --theme=gruvbox-dark
 }
+
+finish_work() {
+    # 获取当前分支名
+    current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+    # 检查是否在 main 分支
+    if [ "$current_branch" = "main" ]; then
+        echo "You are already on the main branch."
+        return 1
+    fi
+
+    # 检查是否有未提交的更改
+    if ! git diff-index --quiet HEAD --; then
+        echo "You have uncommitted changes. Please commit or stash them before running finish_work."
+        return 1
+    fi
+
+    # 切换到 main 分支
+    git checkout main
+
+    # 更新 main 分支
+    git pull origin main
+
+    # 删除当前分支
+    git branch -D "$current_branch"
+
+    echo "Finished work on branch $current_branch. Switched to main and deleted the branch."
+}
