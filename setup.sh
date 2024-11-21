@@ -60,3 +60,10 @@ git clone https://github.com/laurent22/rsync-time-backup "${HOME}/opt"
 
 # install hishtory https://github.com/ddworken/hishtory
 curl https://hishtory.dev/install.py | python3 -
+
+
+# setup git config
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit

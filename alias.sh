@@ -27,7 +27,7 @@ alias gclean="git clean -d -f"
 alias amend="git commit --amend --no-edit"
 alias gup="git-up"
 alias gfollow="git log --follow --"
-alias fo="fork"
+#alias fo="fork"
 alias tfile="tig --"
 
 alias bup="brew update --verbose && brew upgrade --verbose"
@@ -42,3 +42,5 @@ alias http="python3 -m http.server 8000"
 alias prettyjson='python -m json.tool'
 alias python=python3
 alias pip=pip3
+
+alias o="open ."
