@@ -99,11 +99,9 @@ finish_work() {
 }
 
 function fo() {
-    if [ -z "$1" ]; then
-        # If no path provided, open the Contents directory
-        open "/Applications/Fork.app ."
-    else
-        # Open the specified path inside Fork.app
-        open "/Applications/Fork.app $1"
-    fi
+  if [ -z "$1" ]; then
+    open -a "/Applications/Fork.app" .
+  else
+    open -a "/Applications/Fork.app" $1
+  fi
 }
