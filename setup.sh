@@ -62,6 +62,9 @@ git clone https://github.com/laurent22/rsync-time-backup "${HOME}/opt"
 curl https://hishtory.dev/install.py | python3 -
 
 
+# install starship
+curl -sS https://starship.rs/install.sh | sh
+
 # setup git config
 git config --global alias.st status
 git config --global alias.co checkout

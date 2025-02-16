@@ -21,3 +21,7 @@ eval "$(rbenv init -)"
 if [ -d "$HOME/opt/bin" ]; then
   export PATH="$HOME/opt/bin:$PATH"
 fi
+
+if command -v starship >/dev/null 2>&1; then
+  eval "$(starship init zsh)"
+fi
