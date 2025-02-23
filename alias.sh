@@ -32,6 +32,9 @@ alias tfile="tig --"
 
 alias bup="brew update --verbose && brew upgrade --verbose"
 
+# remove derived data
+alias cleandt="rm -rf ~/Library/Developer/Xcode/DerivedData"
+
 # moden unix
 alias ls="lsd"
 alias 10rg="rg -A 10 -B 10"
