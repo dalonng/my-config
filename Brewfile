@@ -18,6 +18,9 @@ brew 'emacs'
 
 brew 'atuin'
 
+# https://github.com/alienator88/Viz
+cask 'viz'
+
 # https://github.com/kraanzu/dooit
 brew 'dooit'
 
