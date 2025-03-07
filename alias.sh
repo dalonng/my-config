@@ -16,7 +16,6 @@ if test -f "/usr/local/bin/code"; then
 fi
 
 alias e="emacs --debug-init"
-alias g="git"
 alias cat="cat -n"
 
 # git
@@ -24,7 +23,6 @@ alias gt="git log --graph --oneline --all"
 alias gspush="git stash push"
 alias gspop="git stash pop"
 alias gclean="git clean -d -f"
-alias amend="git commit --amend --no-edit"
 alias gup="git-up"
 alias gfollow="git log --follow --"
 #alias fo="fork"
