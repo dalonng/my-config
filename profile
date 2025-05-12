@@ -1,7 +1,5 @@
 #!/usr/local/bin/bash
 
-export PATH="$PATH:/opt/homebrew/bin"
-
 workdir=$(
   cd "$(dirname "$0")"
   pwd
