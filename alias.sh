@@ -19,6 +19,7 @@ alias e="emacs --debug-init"
 alias cat="cat -n"
 
 # git
+alias g="git"
 alias gt="git log --graph --oneline --all"
 alias gspush="git stash push"
 alias gspop="git stash pop"
