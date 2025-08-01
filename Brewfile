@@ -2,6 +2,7 @@
 
 brew 'direnv'
 brew 'lsd'
+brew 'eza'
 brew 'fd'
 brew 'fzf'
 brew 'gh'

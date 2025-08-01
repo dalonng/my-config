@@ -35,7 +35,7 @@ alias bup="brew update --verbose && brew upgrade --verbose"
 alias cleandt="rm -rf ~/Library/Developer/Xcode/DerivedData"
 
 # moden unix
-alias ls="lsd"
+alias ls="eza"
 alias 10rg="rg -A 10 -B 10"
 alias rg="rg --no-ignore"
 
