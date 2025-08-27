@@ -1,5 +1,12 @@
 #!/usr/local/bin/bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if [ -d "$SCRIPT_DIR/bin" ]; then
+  export PATH="$SCRIPT_DIR/bin:$PATH"
+fi
+
+
 if command -v mcfly 1>/dev/null 2>&1; then
   eval "$(mcfly init zsh)"
 fi

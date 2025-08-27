@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+# 用法示例:
+#   ./fcount                # 统计当前目录所有文件（不包含隐藏文件/目录）
+#   ./fcount . swift        # 统计当前目录下所有 .swift 文件
+#   ./fcount /path txt md   # 统计指定目录下的 .txt 和 .md 文件
+
+# 封装函数：find + 排除隐藏文件/目录
+find_files() {
+  local dir=$1
+  local pattern=$2
+
+  if [ -z "$pattern" ]; then
+    # 所有非隐藏文件
+    find "$dir" -type d -path "*/.*" -prune -false -o -type f -print
+  else
+    # 指定扩展名文件
+    find "$dir" -type d -path "*/.*" -prune -false -o -type f -name "*.$pattern" -print
+  fi
+}
+
+# 没传参数 -> 统计当前目录所有文件
+if [ $# -eq 0 ]; then
+  count=$(find_files . | wc -l)
+  echo "当前目录所有文件数(不含隐藏): $count"
+  exit 0
+fi
+
+# 至少传了一个参数（目录）
+dir=$1
+shift
+
+if [ ! -d "$dir" ]; then
+  echo "错误: $dir 不是有效目录"
+  exit 1
+fi
+
+# 只传了目录
+if [ $# -eq 0 ]; then
+  count=$(find_files "$dir" | wc -l)
+  echo "$dir 下所有文件数(不含隐藏): $count"
+  exit 0
+fi
+
+# 指定扩展名
+total=0
+for ext in "$@"; do
+  count=$(find_files "$dir" "$ext" | wc -l)
+  echo ".$ext : $count"
+  total=$((total + count))
+done
+
+echo "总文件数(不含隐藏): $total"
