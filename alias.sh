@@ -47,4 +47,6 @@ alias pip=pip3
 
 alias o="open ."
 
-alias gpr='git push origin HEAD && gh pr create --fill'
+#alias gpr='git push origin HEAD && gh pr create --fill'
+alias gpr='git push origin HEAD && gh pr create --fill --web'
+alias gpre='git push origin HEAD && url=$(gh pr create --fill --json url -q ".url") && open -a "Microsoft Edge" "$url"'
