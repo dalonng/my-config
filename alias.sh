@@ -46,3 +46,5 @@ alias python=python3
 alias pip=pip3
 
 alias o="open ."
+
+alias gpr='git push origin HEAD && gh pr create --fill'
