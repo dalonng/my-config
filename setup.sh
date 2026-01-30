@@ -21,6 +21,8 @@ brew upgrade
 
 brew bundle
 
+brew install steipete/tap/peekaboo
+
 check_and_install ncdu
 check_and_install rbenv
 # check_and_install swiftenv
