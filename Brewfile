@@ -27,5 +27,6 @@ cask 'viz'
 brew 'dooit'
 
 cask 'warp'
+cask 'font-fira-code-nerd-font'
 
 # brew bundle

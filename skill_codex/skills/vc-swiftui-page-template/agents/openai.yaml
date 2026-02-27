@@ -1,0 +1,4 @@
+interface:
+  display_name: "VC SwiftUI Template"
+  short_description: "Scaffold UIViewController + SwiftUI feature page"
+  default_prompt: "Use $vc-swiftui-page-template to create a new AAAFeatures business page with a UIViewController shell and SwiftUI view."
