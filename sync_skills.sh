@@ -3,11 +3,17 @@ set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 local_skill_dir="${LOCAL_SKILL_DIR:-"$script_dir/skill_codex/skills"}"
+xcode_skill_dir="${XCODE_SKILL_DIR:-"$script_dir/skill_codex/xcode-skills"}"
 github_cache_dir="${GITHUB_SKILL_CACHE_DIR:-"${XDG_CACHE_HOME:-"$HOME/.cache"}/my-config/codex-skills"}"
 dest_dir="${CODEX_SKILLS_DIR:-"${CODEX_HOME:-"$HOME/.codex"}/skills"}"
 
 if [[ ! -d "$local_skill_dir" ]]; then
   echo "Missing local skill directory: $local_skill_dir" >&2
+  exit 1
+fi
+
+if [[ ! -d "$xcode_skill_dir" ]]; then
+  echo "Missing Xcode skill directory: $xcode_skill_dir" >&2
   exit 1
 fi
 
@@ -35,9 +41,11 @@ sync_skill_dir() {
 }
 
 sync_local_skills() {
+  local source_dir="$1"
+
   while IFS= read -r skill_dir; do
     sync_skill_dir "$skill_dir"
-  done < <(find "$local_skill_dir" -mindepth 1 -maxdepth 1 -type d ! -name ".*" | sort)
+  done < <(find "$source_dir" -mindepth 1 -maxdepth 1 -type d ! -name ".*" | sort)
 }
 
 sync_github_skill() {
@@ -69,7 +77,8 @@ sync_github_skill() {
   sync_skill_dir "$skill_dir"
 }
 
-sync_local_skills
+sync_local_skills "$local_skill_dir"
+sync_local_skills "$xcode_skill_dir"
 
 sync_github_skill "https://github.com/dadederk/iOS-Accessibility-Agent-Skill.git" "main" "ios-accessibility"
 sync_github_skill "git@github.com:twostraws/SwiftUI-Agent-Skill.git" "main" "swiftui-pro"
