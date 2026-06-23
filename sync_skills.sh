@@ -84,4 +84,16 @@ sync_github_skill "https://github.com/dadederk/iOS-Accessibility-Agent-Skill.git
 sync_github_skill "git@github.com:twostraws/SwiftUI-Agent-Skill.git" "main" "swiftui-pro"
 sync_github_skill "https://github.com/vermont42/ios-build-verify.git" "main" "skills/ios-build-verify"
 
+sync_github_skill "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill.git" "main" "skills/spm-build-analysis"
+sync_github_skill "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill.git" "main" "skills/xcode-build-benchmark"
+sync_github_skill "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill.git" "main" "skills/xcode-build-fixer"
+sync_github_skill "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill.git" "main" "skills/xcode-build-orchestrator"
+sync_github_skill "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill.git" "main" "skills/xcode-compilation-analyzer"
+sync_github_skill "https://github.com/AvdLee/Xcode-Build-Optimization-Agent-Skill.git" "main" "skills/xcode-project-analyzer"
+
+
+
+
+
+
 echo "Synced $synced skills to $dest_dir"
