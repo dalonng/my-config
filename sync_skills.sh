@@ -82,5 +82,6 @@ sync_local_skills "$xcode_skill_dir"
 
 sync_github_skill "https://github.com/dadederk/iOS-Accessibility-Agent-Skill.git" "main" "ios-accessibility"
 sync_github_skill "git@github.com:twostraws/SwiftUI-Agent-Skill.git" "main" "swiftui-pro"
+sync_github_skill "https://github.com/vermont42/ios-build-verify" "main" "ios-build-verify"
 
 echo "Synced $synced skills to $dest_dir"
